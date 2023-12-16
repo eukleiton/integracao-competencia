@@ -1,18 +1,96 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Projeto Final - CEP</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
-    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
 </head>
+
 <body>
 
+    <header>
+
+        <nav class="navbar fixed-top bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets\location-pin.png" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top">Encontre Seu Cep
+                </a>
+            </div>
+        </nav>
+    </header>
 
 
+    <section>
+        <main>
 
+            <div class="menu">
+                <h2> <span> Buscar </span>
+                    <ins> Meu Cep</ins>
+                    <img src="assets\location.png" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                </h2>
+                <label for="cep">Cep</label>
+                <input type="number" id="cep" placeholder="Insira seu CEP">
+                <label for="logradouro">Endereço</label>
+                <input type="text" id="logradouro" readonly>
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" readonly>
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" readonly>
+                <label for="estado">Estado</label>
+                <input type="text" id="estado" readonly><br>
+                <input type="submit" onclick="clicarBotao()" class="btn" id="submit" value="ENVIAR"><br>
+                <input type="submit" onclick="clicarBotaoApagar()" class="botao-apagar" id="apagar" value="APAGAR">
+                <hr>
+                <hr>
+
+            </div>
+        </main>
+    </section>
+
+
+    <footer>
+
+
+        <div class="social-media">
+            <a href="https://pt-br.facebook.com/kleiton.serra/" target="_blank">
+                <i class="fa fa-facebook-official"></i>
+                Facebook
+            </a>
+
+            <a href="https://instagram.com/cryptocria_nft">
+                <i class="fa fa-instagram"></i>
+                Instagram
+            </a>
+
+            <a href="https://twitter.com/kleitonserra">
+                <i class="fa fa-twitter"></i>
+                Twitter
+            </a>
+
+            <a href="https://br.linkedin.com/in/kleiton-serra-crypto">
+                <i class="fa fa-linkedin"></i>
+                Linkedin
+            </a>
+
+            <br>
+            <p class="rodape"> 2023 Copyright &copy; Kleiton Serra</p>
+        </div>
+
+    </footer>
 
 
 
@@ -21,4 +99,5 @@
 
     <script src='./js/main.js'></script>
 </body>
+
 </html>

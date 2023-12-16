@@ -1,0 +1,119 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    
+} */
+
+header {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(31, 31, 30);
+    
+}
+
+section main {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(235, 235, 229);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+    /* background  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* img snack "https://th.bing.com/th/id/R.0b5eae76606c4d1b37676c8a0d44c001?rik=lUmfO6%2byPFy3Ww&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fc%2f1%2fa%2f616375.jpg&ehk=plqe7N29QDCY2Zv7HCQDUzMCd8AisrqIDynjzr2mx%2b4%3d&risl=&pid=ImgRaw&r=0" */
+    background: url(https://png.pngtree.com/background/20231030/original/pngtree-3d-rendered-illustration-of-gps-tracking-and-position-detection-interface-picture-image_5802749.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: animateBg 5s linear infinite;
+    
+}
+
+@keyframes animateBg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(129, 128, 128);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 10px 10px;
+    font-family: 'DM Serif Display', serif;
+
+}
+
+label {
+    color:rgb(255, 255, 255);
+    margin: 10px 0 5px;
+    /* font-weight: 300; */
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'DM Serif Display', serif;
+}
+
+.btn, .botao-apagar {
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: rgb(212, 29, 29);
+    color: white;
+}
+
+input {
+    border-radius: 0.25rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::-webkit-input-placeholder {
+    color: black;
+    opacity: 0.2; 
+}
+
+span {
+    color: red;
+}
+
+
+footer {
+
+    display: flex;
+    justify-content: center;
+    background-color: rgb(31, 31, 30);
+    border: rgba(255, 255, 255, .0);
+
+
+
+}
+
+.social-media {
+    background: transparent;
+    text-align: center;
+    color: rgb(255, 0, 0);
+
+
+}
+
